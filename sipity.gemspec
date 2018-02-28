@@ -31,7 +31,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'engine_cart'
   spec.add_development_dependency 'factory_bot_rails', '~> 4.4'
   spec.add_development_dependency 'rake', '~> 12.0'
-  spec.add_development_dependency 'rspec-rails', '~> 3.0'
   spec.add_development_dependency 'rspec-its', '~> 1.1'
+  spec.add_development_dependency 'rspec-rails', '~> 3.0'
+  spec.add_development_dependency 'shoulda-matchers', '~> 3.1'
 
 end

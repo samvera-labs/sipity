@@ -3,6 +3,13 @@ require 'bundler/setup'
 require 'engine_cart'
 EngineCart.load_application!
 
+require 'shoulda/matchers'
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+  end
+end
+
 require 'factory_bot'
 FactoryBot.definition_file_paths = [File.expand_path("../factories", __FILE__)]
 FactoryBot.find_definitions
