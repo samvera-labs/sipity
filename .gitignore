@@ -10,3 +10,5 @@ test/dummy/storage/
 test/dummy/tmp/
 
 Gemfile.lock
+
+.internal_test_app
