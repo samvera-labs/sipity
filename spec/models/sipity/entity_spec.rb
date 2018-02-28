@@ -14,14 +14,5 @@ module Sipity
       it { is_expected.to delegate_method(:workflow_state_name).to(:workflow_state).as(:name) }
       it { is_expected.to delegate_method(:workflow_name).to(:workflow).as(:name) }
     end
-
-    describe '#proxy_for' do
-      let(:work) { create(:generic_work) }
-      let(:entity) { Sipity::Entity.new(proxy_for_global_id: work.to_global_id) }
-
-      it 'will retrieve based on a GlobalID of the object' do
-        expect(entity.proxy_for).to eq(work)
-      end
-    end
   end
 end

@@ -9,6 +9,7 @@ We need to figure out how to disentangle PermissionTemplates in Hyrax from Sipit
   * Workflow#active
   * Workflow.activate!
   * Workflow.find_active_workflow_for
+  * Entity#proxy_for
 
 ## Installation
 

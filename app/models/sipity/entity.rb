@@ -33,9 +33,5 @@ module Sipity
 
     # Defines the method #workflow_name
     delegate :name, to: :workflow, prefix: :workflow
-
-    def proxy_for
-      @proxy_for ||= GlobalID::Locator.locate(proxy_for_global_id)
-    end
   end
 end
