@@ -1,4 +1,4 @@
-require "sipity/version"
+require "sipity/railtie"
 
 module Sipity
   # Your code goes here...
