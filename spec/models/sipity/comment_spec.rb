@@ -10,7 +10,7 @@ module Sipity
 
     describe '#name_of_commentor' do
       let(:instance) { described_class.new }
-      let(:agent) { instance_double(Agent, proxy_for_global_id: 'gid://User/123') }
+      let(:agent) { instance_double(Agent, name: 'Hiya') }
 
       subject { instance.name_of_commentor }
 
