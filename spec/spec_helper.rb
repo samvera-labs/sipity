@@ -3,8 +3,9 @@ require 'bundler/setup'
 require 'engine_cart'
 EngineCart.load_application!
 
-require 'sipity'
 require 'factory_bot'
+FactoryBot.definition_file_paths = [File.expand_path("../factories", __FILE__)]
+FactoryBot.find_definitions
 
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
